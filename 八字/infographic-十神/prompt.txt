@@ -1,0 +1,78 @@
+# 十神关系图 · 乙木日主
+
+You are a professional infographic designer. Create an infographic in hand-drawn educational style (hand-drawn-edu).
+
+## Layout: hub-spoke
+Center element radiates to surrounding elements with connecting lines. Main concept in center, related sub-concepts around it in a circular/spoke arrangement.
+
+## Style: hand-drawn-edu
+Macaron pastel colors, hand-drawn wobble lines, stick figures, chalk-like textures. Warm, approachable, educational. Clean white background with slight texture.
+
+## Aspect Ratio: portrait (9:16) — suitable for mobile reading
+
+## Content Structure
+
+### Center (biggest, most prominent)
+"乙木日主" — warm green background (#69db7c), hand-drawn circle
+
+### 5 Spokes radiating outward, evenly spaced
+
+Each spoke has:
+1. Relationship category box (rounded rect, pastel color)
+2. Two sub-boxes below (white, slight border) showing the two ten-shen names
+3. Arrow connecting center to category, with short label
+
+**Spoke 1 — 克我（金）** [blue #a5d8ff]
+→ Arrow label: "金克木"
+- 正官 庚
+- 七杀 辛
+
+**Spoke 2 — 生我（水）** [purple #d0bfff]
+→ Arrow label: "水生木"
+- 正印 壬
+- 偏印 癸
+
+**Spoke 3 — 我生（火）** [pink/red #ffc9c9]
+→ Arrow label: "木生火"
+- 伤官 丙
+- 食神 丁
+
+**Spoke 4 — 我克（土）** [orange #ffd8a8]
+→ Arrow label: "木克土"
+- 正财 戊
+- 偏财 己
+
+**Spoke 5 — 同我（木）** [green #b2f2bb]
+→ Arrow label: "同一行"
+- 劫财 甲
+- 比肩 乙
+
+### Bottom legend
+5 small colored swatches with labels:
+蓝=金(官杀) | 紫=水(印) | 红=火(食伤) | 橙=土(财) | 绿=木(比劫)
+
+### Title at top
+"十神关系图 · 以乙木日主为例"
+
+### Subtitle
+"5种关系 × 阴阳各一 = 十神"
+
+## Design specifications
+- Hand-drawn wobble effect on all borders
+- Macaron pastel color palette (soft, muted)
+- Clean white background with subtle paper texture
+- Chinese text throughout
+- Font: handwritten/rounded style
+- Ample whitespace between elements
+- Stick figure icons if possible for each relationship type
+- Warm, educational, approachable feel
+
+## Color palette
+- Center: #69db7c (green)
+- Wood: #b2f2bb (light green)
+- Fire: #ffc9c9 (light pink)
+- Earth: #ffd8a8 (light orange)
+- Metal: #a5d8ff (light blue)
+- Water: #d0bfff (light purple)
+- Text: #2d2d2d (dark gray, not pure black for softer look)
+- Background: #faf9f7 (warm white)
