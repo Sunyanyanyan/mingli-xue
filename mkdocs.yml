@@ -1,0 +1,57 @@
+site_name: 椰子要破壳 · 八字入门
+site_description: 每天10分钟，用生活讲八字
+site_url: https://sunyanyanyan.github.io/mingli-xue/
+repo_url: https://github.com/Sunyanyanyan/mingli-xue
+repo_name: mingli-xue
+edit_uri: ""
+
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: indigo
+    accent: deep orange
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - footnotes
+
+nav:
+  - 首页: index.md
+  - 📖 课程:
+    - 基础篇:
+      - 第1课 什么是八字: 八字/第1课-什么是八字.md
+      - 第2课 天干: 八字/第2课-天干.md
+      - 第3课 地支: 八字/第3课-地支.md
+      - 第4课 五行关系: 八字/第4课-五行关系.md
+      - 第5课 藏干: 八字/第5课-藏干.md
+    - 进阶篇:
+      - 第6课 十神（上）: 八字/第6课-十神-上.md
+      - 第7课 十神（下）: 八字/第7课-十神-下.md
+  - 📝 小贴士:
+    - 十神记忆口诀: 八字/十神记忆口诀-小贴士.md
+    - 藏干记忆口诀: 八字/藏干记忆口诀-小贴士.md
+
+docs_dir: docs
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Sunyanyanyan/mingli-xue
+
+copyright: Copyright &copy; 椰子要破壳
