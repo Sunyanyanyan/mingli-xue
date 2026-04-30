@@ -30,8 +30,6 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.top
-    - navigation.indexes
-    - navigation.sections
     - toc.follow
     - content.code.copy
     - header.autohide
