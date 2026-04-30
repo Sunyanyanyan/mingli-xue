@@ -12,10 +12,17 @@
   --font-code: "JetBrains Mono", "Source Code Pro", "SF Mono", "Cascadia Code", monospace;
 }
 
+/* ===== 内容区宽度限制 — 中文舒适阅读 ===== */
+.md-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* ===== 全局排版 ===== */
 body, .md-typeset {
   font-family: var(--font-stack);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.02em;
   color: #3e3e3e;
