@@ -2,25 +2,40 @@ site_name: 椰子要破壳 · 八字入门
 site_description: 每天10分钟，用生活讲八字
 site_url: https://sunyanyanyan.github.io/mingli-xue/
 repo_url: https://github.com/Sunyanyanyan/mingli-xue
-repo_name: mingli-xue
+repo_name: 椰子要破壳
 edit_uri: ""
 
 theme:
   name: material
   language: zh
   palette:
-    primary: indigo
-    accent: deep orange
+    - scheme: default
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: 夜间模式
+    - scheme: slate
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: 白天模式
   font:
-    text: Noto Sans SC
+    text: Noto Serif SC
     code: JetBrains Mono
+  favicon: assets/logo.svg
+  logo: assets/logo.svg
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.top
     - navigation.indexes
+    - navigation.sections
     - toc.follow
     - content.code.copy
+    - header.autohide
+    - announce.dismiss
 
 markdown_extensions:
   - admonition
@@ -28,8 +43,17 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - tables
   - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
 
 nav:
   - 首页: index.md
@@ -53,5 +77,11 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Sunyanyanyan/mingli-xue
+  generator: false
 
-copyright: Copyright &copy; 椰子要破壳
+copyright: |
+  &copy; 2025 椰子要破壳 ·
+  <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备XXXXXXXX号</a>
+
+extra_css:
+  - assets/extra.css
