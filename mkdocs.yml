@@ -10,13 +10,13 @@ theme:
   language: zh
   palette:
     - scheme: default
-      primary: deep orange
+      primary: brown
       accent: amber
       toggle:
         icon: material/weather-night
         name: 夜间模式
     - scheme: slate
-      primary: deep orange
+      primary: brown
       accent: amber
       toggle:
         icon: material/weather-sunny
