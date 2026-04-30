@@ -13,10 +13,8 @@
 }
 
 /* ===== 内容区宽度限制 — 中文舒适阅读 ===== */
-.md-content {
+.md-content__inner {
   max-width: 720px;
-  margin: 0 auto;
-  padding: 0 24px;
 }
 
 /* ===== 全局排版 ===== */
