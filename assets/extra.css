@@ -1,0 +1,135 @@
+/* 文章内容美化 */
+.md-content h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #e65100;
+  border-bottom: 2px solid #fbe9e7;
+  padding-bottom: 0.3em;
+}
+
+.md-content h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #bf360c;
+  margin-top: 2em;
+}
+
+.md-content h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #5d4037;
+  margin-top: 1.5em;
+}
+
+/* 引用区块美化 */
+.md-content blockquote {
+  border-left: 4px solid #ff8a65;
+  background: #fff3e0;
+  padding: 0.8em 1em;
+  border-radius: 0 8px 8px 0;
+}
+
+.md-content blockquote p {
+  margin: 0;
+  color: #5d4037;
+}
+
+/* 表格美化 */
+.md-content table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.md-content table th {
+  background: #efebe9;
+  color: #3e2723;
+  font-weight: 600;
+}
+
+/* 代码块美化 */
+.md-content pre {
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+/* 首页卡片样式 */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 12px;
+  border: 1px solid #fbe9e7;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 课程卡片图标 */
+.md-typeset .task-list-control .task-list-indicator::before {
+  background: #ff8a65;
+}
+
+/* 链接颜色 */
+.md-content a {
+  color: #e65100;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.md-content a:hover {
+  color: #bf360c;
+}
+
+/* 侧边栏美化 */
+.md-nav__link--active,
+.md-nav__link:active {
+  color: #e65100;
+  font-weight: 600;
+}
+
+.md-nav__item .md-nav__link--active {
+  border-left: 3px solid #e65100;
+  padding-left: 8px;
+}
+
+/* 顶部导航 */
+.md-header {
+  background: linear-gradient(135deg, #e65100, #bf360c);
+}
+
+.md-tabs {
+  background: linear-gradient(135deg, #e65100, #bf360c);
+}
+
+/* 分割线美化 */
+.md-content hr {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ffccbc, transparent);
+  border: none;
+  margin: 2em 0;
+}
+
+/* 图片圆角 */
+.md-content img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* 提示框圆角 */
+.md-typeset .admonition {
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+/* 大字标题（倪师风格强调） */
+.md-content .shout {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #bf360c;
+  padding: 0.5em 1em;
+  background: #fff3e0;
+  border-radius: 8px;
+  border-left: 4px solid #e65100;
+  margin: 1.5em 0;
+}
