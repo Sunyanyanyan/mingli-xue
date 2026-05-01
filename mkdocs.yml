@@ -21,9 +21,7 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: 白天模式
-  font:
-    text: Noto Serif SC
-    code: JetBrains Mono
+  font: false
   favicon: assets/logo.svg
   logo: assets/logo.svg
   features:
@@ -65,6 +63,7 @@ nav:
     - 进阶篇:
       - 第6课 十神（上）: 八字/第6课-十神-上.md
       - 第7课 十神（下）: 八字/第7课-十神-下.md
+      - 第8课 十神组合看性格: 八字/第8课-十神组合看性格.md
   - 📝 小贴士:
     - 十神记忆口诀: 八字/十神记忆口诀-小贴士.md
     - 藏干记忆口诀: 八字/藏干记忆口诀-小贴士.md
