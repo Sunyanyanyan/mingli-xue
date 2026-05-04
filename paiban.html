@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>椰子排版 · 公众号一键排版</title>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+:root {
+  --c: #3e2723; --o: #e65100; --d: #bf360c;
+  --bg: #fff3e0; --l: #fbe9e7; --m: #8d6e63;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#faf8f5;color:var(--c);min-height:100vh}
+.topbar{background:#fff;border-bottom:1px solid #f0ece6;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
+.topbar h1{font-size:18px;color:var(--o);display:flex;align-items:center;gap:6px}
+.topbar .coco{font-size:22px}
+.btn{padding:8px 18px;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer}
+.btn-go{background:var(--o);color:#fff}
+.btn-out{background:#fff;color:var(--o);border:1px solid var(--o)}
+.tabs{display:flex;gap:4px;background:#fff;padding:8px 16px;border-bottom:1px solid #f0ece6}
+.tab{padding:6px 16px;border:none;background:none;font-size:14px;color:var(--m);border-radius:4px;cursor:pointer}
+.tab.on{background:var(--bg);color:var(--o);font-weight:600}
+.editor{display:flex;height:calc(100vh - 100px)}
+.panel{flex:1;overflow-y:auto;padding:16px}
+.panel:first-child{border-right:1px solid #f0ece6}
+#input{width:100%;height:100%;border:none;resize:none;font-size:15px;line-height:1.8;font-family:inherit;color:var(--c);background:transparent;outline:none}
+#input::placeholder{color:var(--m);opacity:0.5}
+#preview{font-size:16px;line-height:1.9;max-width:640px;margin:0 auto}
+#preview h1{font-size:22px;color:var(--o);text-align:center;margin:1em 0 0.6em}
+#preview h2{font-size:18px;color:var(--d);margin:1.5em 0 0.5em;padding-bottom:6px;border-bottom:1px solid var(--l)}
+#preview h3{font-size:16px;color:#5d4037;margin:1em 0 0.3em}
+#preview p{margin:0.6em 0}
+#preview strong{color:#5d4037}
+#preview ul,#preview ol{margin:0.5em 0;padding-left:1.4em}
+#preview li{margin:0.2em 0}
+#preview blockquote{border-left:4px solid var(--o);background:var(--bg);padding:10px 14px;margin:0.8em 0;border-radius:0 6px 6px 0;color:#5d4037}
+#preview code{background:#f5f5f5;padding:1px 4px;border-radius:3px;font-size:14px;color:#c7254e}
+#preview pre{background:#f5f5f5;padding:12px;border-radius:6px;overflow-x:auto;font-size:14px;line-height:1.6}
+#preview table{border-collapse:collapse;width:100%;margin:0.8em 0;font-size:14px}
+#preview th,#preview td{border:1px solid #e8e4dc;padding:8px 10px;text-align:left}
+#preview th{background:var(--bg);font-weight:600}
+#preview hr{border:none;height:1px;background:var(--o);margin:16px 0;opacity:0.25}
+#preview img{max-width:100%;border-radius:6px}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--c);color:#fff;padding:10px 24px;border-radius:20px;font-size:14px;opacity:0;transition:opacity 0.3s;pointer-events:none;z-index:100}
+.toast.show{opacity:1}
+@media(max-width:768px){
+  .editor .panel:last-child{display:none}
+  .editor.preview .panel:first-child{display:none}
+  .editor.preview .panel:last-child{display:block}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <h1><span class="coco">🥥</span> 椰子排版</h1>
+  <button class="btn btn-go" onclick="doCopy()">复制</button>
+</div>
+
+<div class="tabs">
+  <button class="tab on" onclick="showPanel('edit')">✏️ 编辑</button>
+  <button class="tab" onclick="showPanel('preview')">👁 预览</button>
+  <button class="tab" onclick="showPanel('both')" style="display:none" id="tab-both">↔ 对照</button>
+</div>
+
+<div class="editor" id="editor">
+  <div class="panel"><textarea id="input" placeholder="粘贴 Markdown 到这里……"></textarea></div>
+  <div class="panel"><div id="preview"></div></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const input = document.getElementById('input');
+const preview = document.getElementById('preview');
+const editor = document.getElementById('editor');
+
+marked.setOptions({breaks:true,gfm:true});
+
+input.addEventListener('input',()=>{
+  preview.innerHTML = marked.parse(input.value);
+});
+
+function showPanel(mode){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  if(mode==='edit'){editor.classList.remove('preview');document.querySelector('.tabs .tab:first-child').classList.add('on')}
+  if(mode==='preview'){editor.classList.add('preview');document.querySelector('.tabs .tab:last-child').classList.add('on')}
+}
+
+// Copy as WeChat-safe inline HTML
+function doCopy(){
+  const md = input.value.trim();
+  if(!md) return toast('先粘贴内容');
+  const html = marked.parse(md);
+  
+  // Wrap in inline-styled WeChat-safe HTML
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML = html;
+  
+  // Convert all elements to inline styles matching coconut theme
+  const styles = {
+    'H1':'font-size:22px;color:#e65100;text-align:center;margin:1.5em 0 0.8em;font-weight:700',
+    'H2':'font-size:18px;color:#bf360c;margin:1.8em 0 0.6em;padding-bottom:6px;border-bottom:1px solid #fbe9e7;font-weight:700',
+    'H3':'font-size:16px;color:#5d4037;margin:1.2em 0 0.4em;font-weight:700',
+    'P':'margin:0.8em 0;font-size:16px;line-height:1.9;color:#3e2723',
+    'UL':'margin:0.6em 0;padding-left:1.4em;font-size:16px;line-height:1.9;color:#3e2723',
+    'OL':'margin:0.6em 0;padding-left:1.4em;font-size:16px;line-height:1.9;color:#3e2723',
+    'LI':'margin:0.3em 0;font-size:16px;line-height:1.9;color:#3e2723',
+    'BLOCKQUOTE':'border-left:4px solid #e65100;background:#fff3e0;padding:12px 16px;margin:1em 0;border-radius:0 6px 6px 0;color:#5d4037;font-size:16px;line-height:1.9',
+    'STRONG':'color:#5d4037;font-weight:700',
+    'CODE':'background:#f5f5f5;padding:1px 4px;border-radius:3px;font-size:14px;color:#c7254e;font-family:monospace',
+    'PRE':'background:#f5f5f5;padding:12px;border-radius:6px;overflow-x:auto;font-size:14px;line-height:1.6',
+    'HR':'border:none;height:1px;background:#e65100;margin:18px 0;opacity:0.25',
+    'TABLE':'border-collapse:collapse;width:100%;margin:1em 0;font-size:14px',
+    'TH':'border:1px solid #e8e4dc;padding:8px 10px;text-align:left;background:#fff3e0;font-weight:600',
+    'TD':'border:1px solid #e8e4dc;padding:8px 10px;text-align:left'
+  };
+  
+  const bodyStyle = 'max-width:640px;margin:0 auto;padding:30px 18px 40px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.9;color:#3e2723;background:#fff';
+  
+  function applyStyles(el){
+    const tag = el.tagName;
+    if(styles[tag]) el.setAttribute('style',styles[tag]);
+    for(const child of el.children) applyStyles(child);
+  }
+  
+  for(const child of wrapper.children) applyStyles(child);
+  
+  const full = `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"></head><body style="${bodyStyle}">${wrapper.innerHTML}</body></html>`;
+  
+  navigator.clipboard.write([
+    new ClipboardItem({
+      'text/html': new Blob([full],{type:'text/html'}),
+      'text/plain': new Blob([md],{type:'text/plain'})
+    })
+  ]).then(()=>toast('✅ 已复制！去公众号粘贴')).catch(()=>{
+    // Fallback
+    const ta = document.createElement('textarea');
+    ta.value = full;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    toast('✅ 已复制！');
+  });
+}
+
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2000);
+}
+
+// Load sample
+input.value = `# 第0课：先看地图——八字到底在说什么
+
+> 椰子要破壳 · 八字入门系列
+
+---
+
+很多人学八字，上来就背天干地支、背五行生克、背十神表。
+
+错了。
+
+**你应该先站远一步，看整张地图。**
+
+---
+
+## 八字不是算命，是读说明书
+
+你买了一台车，车上有一本**说明书**。
+
+八字就是你的生命说明书。不是告诉你「几岁发财」的算命书，而是告诉你：
+
+**你是辆什么车、烧什么油、走什么路最舒服。**
+
+- 有人是越野车，非要去跑赛道 → 累死
+- 有人是跑车，非要去爬山路 → 底盘刮烂
+
+**八字不是改你的命，是让你别用错自己。**
+
+---
+
+## 八个字 = 四柱 × 2
+
+> **年柱、月柱、日柱、时柱——四个柱子，每个分上下两个字。**
+> 上面叫天干（外显），下面叫地支（底色）。
+
+日柱上面的天干叫「日主」——那是你。整个八字围绕你一个人展开。
+`;
+preview.innerHTML = marked.parse(input.value);
+
+// Show both tabs on desktop
+if(window.innerWidth>768) document.getElementById('tab-both').style.display='';
+</script>
+</body>
+</html>
