@@ -94,15 +94,16 @@ if(typeof marked === 'undefined'){
 
 marked.setOptions({breaks:true,gfm:true});
 
-function wrapCoco(html, title){
+function wrapCoco(html, title, curNum){
   const t = title || '椰子要破壳';
+  const cn = (typeof curNum === 'number' && curNum >= 0) ? curNum : -1;
   return `<div class="coco-wrap">
 <div class="hd"><div class="icon">🥥</div><div class="bn">椰子要破壳</div><div class="sb">用生活讲八字 · 入门系列</div></div>
 <hr class="hr">
 ${html}
 <hr class="hr">
 <div class="sg"><span class="br">🥥 椰子要破壳</span><div class="lt">用生活讲八字 · 入门系列</div></div>
-${genAllLessons(-1)}
+${genAllLessons(cn)}
 <hr class="hr">
 <div class="ft">📖 <a href="https://sunyanyanyan.github.io/mingli-xue/">椰子要破壳 · 八字入门</a><div style="color:#bcaaa4">原创文章 · 转载请联系作者</div></div>
 </div>`;
@@ -152,7 +153,7 @@ function genAllLessons(cur){
 
 input.addEventListener('input', ()=>{
   const html = marked.parse(input.value);
-  preview.innerHTML = wrapCoco(html, guessTitle(input.value));
+  preview.innerHTML = wrapCoco(html, guessTitle(input.value), getLessonNum(input.value));
 });
 
 function showPanel(mode){
