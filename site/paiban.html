@@ -140,16 +140,14 @@ function getLessonNum(md){
 
 function genAllLessons(cur){
   let html = '<div class="rev"><h3>📖 八字入门 · 系列课程</h3>';
-  const end = cur >= 0 ? cur + 1 : LESSONS.length;
-  for(let i = 0; i < end; i++){
+  for(let i = 0; i < LESSONS.length; i++){
     if(i === cur){
       html += `<p><span class="cur">▸ 第${i}课：${LESSONS[i]}</span></p>`;
+    } else if(i < cur){
+      html += `<p>▸ 第${i}课：${LESSONS[i]}</p>`;
     } else {
-      html += `<p>第${i}课：${LESSONS[i]}</p>`;
+      html += `<p style="color:#bcaaa4">第${i}课：${LESSONS[i]}</p>`;
     }
-  }
-  if(cur < LESSONS.length - 1 && cur >= 0){
-    html += '<p style="color:#bcaaa4;font-size:13px;margin-top:8px">更多课程持续更新中……</p>';
   }
   html += '</div>';
   return html;
