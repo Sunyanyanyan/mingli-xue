@@ -49,6 +49,11 @@ body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;backgr
 #preview .coco-wrap .sg .lt{font-size:13px;margin-top:4px}
 #preview .coco-wrap .ft{text-align:center;color:#8d6e63;font-size:13px;padding:8px 0;line-height:1.8}
 #preview .coco-wrap .ft a{color:#e65100;text-decoration:none}
+#preview .coco-wrap .rev{margin:1.5em 0;padding:12px 16px;background:#fafaf6;border-radius:8px;border:1px solid #e8e4dc}
+#preview .coco-wrap .rev h3{font-size:15px;color:#bf360c;margin:0 0 8px;border:none;padding:0}
+#preview .coco-wrap .rev p{margin:3px 0;font-size:14px;color:#5d4037}
+#preview .coco-wrap .rev p .cur{color:#e65100;font-weight:700}
+#preview .coco-wrap .rev a{color:#e65100;text-decoration:none}
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--c);color:#fff;padding:10px 24px;border-radius:20px;font-size:14px;opacity:0;transition:opacity 0.3s;pointer-events:none;z-index:100}
 .toast.show{opacity:1}
 </style>
@@ -97,6 +102,7 @@ function wrapCoco(html, title){
 ${html}
 <hr class="hr">
 <div class="sg"><span class="br">🥥 椰子要破壳</span><div class="lt">用生活讲八字 · 入门系列</div></div>
+${genAllLessons(-1)}
 <hr class="hr">
 <div class="ft">📖 <a href="https://sunyanyanyan.github.io/mingli-xue/">椰子要破壳 · 八字入门</a><div style="color:#bcaaa4">原创文章 · 转载请联系作者</div></div>
 </div>`;
@@ -105,6 +111,43 @@ ${html}
 function guessTitle(md){
   const m = md.match(/^#\s*(.+)/m);
   return m ? m[1].replace(/\*\*/g,'').trim() : '';
+}
+
+const LESSONS = [
+  '先看地图——八字到底在说什么',
+  '什么是八字？——你的生命说明书',
+  '天干——十个性格鲜明的小伙伴',
+  '地支——你的原生环境',
+  '五行关系——能量是怎么流动的',
+  '藏干——看不到的，才是真相',
+  '十神（上）——谁在管你，谁在帮你',
+  '十神（下）——才华、钱和朋友',
+  '十神组合看性格——单味不成菜',
+  '大运（上）——十年一个命',
+  '大运（下）——大运怎么看',
+  '流年怎么看——每年刮什么风',
+  '旺衰强弱——你电池有多大',
+  '用神忌神——你的充电器和耗电器',
+  '格局入门——八字的主线剧情',
+  '神煞——八字里的标点符号',
+];
+
+function getLessonNum(md){
+  const m = md.match(/第(\d+)课/);
+  return m ? parseInt(m[1]) : -1;
+}
+
+function genAllLessons(cur){
+  let html = '<div class="rev"><h3>📖 八字入门 · 系列课程</h3>';
+  for(let i = 0; i < LESSONS.length; i++){
+    if(i === cur){
+      html += `<p><span class="cur">▸ 第${i}课：${LESSONS[i]}</span></p>`;
+    } else {
+      html += `<p>第${i}课：${LESSONS[i]}</p>`;
+    }
+  }
+  html += '</div>';
+  return html;
 }
 
 input.addEventListener('input', ()=>{
@@ -138,7 +181,7 @@ function doCopy(){
   const t = guessTitle(md);
 
   const bodyCss = 'max-width:640px;margin:0 auto;padding:30px 18px 40px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.9;color:#3e2723;background:#fff;overflow-wrap:break-word;word-break:break-word';
-  const css = '.coco{max-width:640px;margin:0 auto}.coco .hd{text-align:center;padding:16px 0 8px}.coco .hd .ic{font-size:32px;margin-bottom:4px}.coco .hd h1{font-size:22px;color:#e65100;font-weight:700;margin:0}.coco .hd .sb{color:#8d6e63;font-size:13px;margin:4px 0 0;letter-spacing:1px}.coco .div{border:none;height:1px;background:#e65100;margin:18px 0;opacity:0.3}.coco h1{font-size:22px;color:#e65100;text-align:center;margin:1.5em 0 .8em;font-weight:700}.coco h2{font-size:18px;color:#bf360c;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:1px solid #fbe9e7}.coco h3{font-size:16px;color:#5d4037;margin:1.2em 0 .4em;font-weight:700}.coco p{margin:.8em 0}.coco strong{color:#5d4037}.coco blockquote{border-left:4px solid #e65100;background:#fff3e0;padding:12px 16px;margin:1em 0;border-radius:0 6px 6px 0;color:#5d4037}.coco blockquote p{margin:0.4em 0}.coco ul,.coco ol{margin:.6em 0;padding-left:1.4em}.coco li{margin:.3em 0}.coco table{border-collapse:collapse;width:100%;margin:1em 0;font-size:15px}.coco th{background:#fff3e0;color:#bf360c;padding:8px 10px;border:1px solid #f0ece6;text-align:center;font-weight:700}.coco td{padding:8px 10px;border:1px solid #f0ece6;text-align:center;color:#5d4037}.coco hr{border:none;height:1px;background:#e65100;margin:18px 0;opacity:0.3}.coco .sg{text-align:center;color:#8d6e63;margin:2em 0 1em}.coco .sg .br{color:#e65100;font-weight:700}.coco .sg .lt{font-size:13px;margin-top:4px}.coco .ft{text-align:center;color:#8d6e63;font-size:13px;padding:8px 0;line-height:1.8}.coco .ft a{color:#e65100;text-decoration:none}';
+  const css = '.coco{max-width:640px;margin:0 auto}.coco .hd{text-align:center;padding:16px 0 8px}.coco .hd .ic{font-size:32px;margin-bottom:4px}.coco .hd h1{font-size:22px;color:#e65100;font-weight:700;margin:0}.coco .hd .sb{color:#8d6e63;font-size:13px;margin:4px 0 0;letter-spacing:1px}.coco .div{border:none;height:1px;background:#e65100;margin:18px 0;opacity:0.3}.coco h1{font-size:22px;color:#e65100;text-align:center;margin:1.5em 0 .8em;font-weight:700}.coco h2{font-size:18px;color:#bf360c;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:1px solid #fbe9e7}.coco h3{font-size:16px;color:#5d4037;margin:1.2em 0 .4em;font-weight:700}.coco p{margin:.8em 0}.coco strong{color:#5d4037}.coco blockquote{border-left:4px solid #e65100;background:#fff3e0;padding:12px 16px;margin:1em 0;border-radius:0 6px 6px 0;color:#5d4037}.coco blockquote p{margin:0.4em 0}.coco ul,.coco ol{margin:.6em 0;padding-left:1.4em}.coco li{margin:.3em 0}.coco table{border-collapse:collapse;width:100%;margin:1em 0;font-size:15px}.coco th{background:#fff3e0;color:#bf360c;padding:8px 10px;border:1px solid #f0ece6;text-align:center;font-weight:700}.coco td{padding:8px 10px;border:1px solid #f0ece6;text-align:center;color:#5d4037}.coco hr{border:none;height:1px;background:#e65100;margin:18px 0;opacity:0.3}.coco .sg{text-align:center;color:#8d6e63;margin:2em 0 1em}.coco .sg .br{color:#e65100;font-weight:700}.coco .sg .lt{font-size:13px;margin-top:4px}.coco .ft{text-align:center;color:#8d6e63;font-size:13px;padding:8px 0;line-height:1.8}.coco .ft a{color:#e65100;text-decoration:none}.coco .rev{margin:1.5em 0;padding:12px 16px;background:#fafaf6;border-radius:8px;border:1px solid #e8e4dc}.coco .rev h3{font-size:15px;color:#bf360c;margin:0 0 8px}.coco .rev p{margin:3px 0;font-size:14px;color:#5d4037}.coco .rev .cur{color:#e65100;font-weight:700}';
 
   const body = `<div class="coco">
 <div class="hd"><div class="ic">🥥</div><h1>椰子要破壳</h1><p class="sb">用生活讲八字 · 入门系列</p></div>
@@ -146,6 +189,7 @@ function doCopy(){
 ${parsed}
 <hr class="div">
 <div class="sg"><p><span class="br">🥥 椰子要破壳</span></p><p class="lt">用生活讲八字 · 入门系列</p></div>
+${genAllLessons(getLessonNum(md))}
 <hr class="div">
 <div class="ft"><p>📖 <a href="https://sunyanyanyan.github.io/mingli-xue/">椰子要破壳 · 八字入门</a></p><p style="color:#bcaaa4">原创文章 · 转载请联系作者</p></div>
 </div>`;
