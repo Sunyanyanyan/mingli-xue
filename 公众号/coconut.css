@@ -1,0 +1,118 @@
+/* 椰子要破壳 · 公众号统一样式 */
+:root {
+    --coconut-brown: #3e2723;
+    --coconut-orange: #e65100;
+    --coconut-deep: #bf360c;
+    --coconut-bg: #fff3e0;
+    --coconut-light: #fbe9e7;
+    --coconut-muted: #8d6e63;
+    --coconut-faint: #bcaaa4;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 30px 18px 40px;
+    font-family: -apple-system, 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--coconut-brown);
+    background: #fff;
+}
+
+.header { text-align: center; padding: 16px 0 8px; }
+.header .coconut { font-size: 32px; margin-bottom: 4px; }
+.header h1 { font-size: 22px; color: var(--coconut-orange); font-weight: 700; margin: 0; }
+.header .sub { color: var(--coconut-muted); font-size: 13px; margin: 4px 0 0; letter-spacing: 1px; }
+
+.divider {
+    border: none; height: 1px;
+    background: linear-gradient(to right, transparent, var(--coconut-orange), transparent);
+    margin: 18px 0;
+}
+
+.title { font-size: 22px; color: var(--coconut-orange); text-align: center; margin: 1.5em 0 0.8em; }
+
+.series-tag {
+    border-left: 4px solid var(--coconut-orange);
+    background: var(--coconut-bg);
+    padding: 12px 16px; margin: 1em 0;
+    border-radius: 0 6px 6px 0;
+    color: #5d4037;
+}
+
+h2 {
+    font-size: 18px; color: var(--coconut-deep);
+    margin: 1.8em 0 0.6em;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--coconut-light);
+}
+
+h3 { font-size: 16px; color: #5d4037; margin: 1.2em 0 0.4em; font-weight: 700; }
+
+p { margin: 0.8em 0; }
+
+strong { color: #5d4037; }
+
+.qa {
+    border-left: 4px solid var(--coconut-orange);
+    background: var(--coconut-bg);
+    padding: 12px 16px; margin: 1em 0;
+    border-radius: 0 6px 6px 0;
+    color: #5d4037;
+}
+.qa .q { font-weight: 700; color: var(--coconut-deep); }
+
+.scene {
+    background: #fafaf6;
+    border: 1px solid #e8e4dc;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 1em 0;
+    color: #5d4037;
+}
+
+ul, ol { margin: 0.6em 0; padding-left: 1.4em; }
+li { margin: 0.3em 0; }
+
+.concept-list { margin: 1em 0; }
+.concept-item {
+    border-bottom: 1px solid #f0ece6;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.concept-item:first-child { border-top: 1px solid #f0ece6; }
+.concept-item .name {
+    font-weight: 700;
+    color: var(--coconut-deep);
+    min-width: 70px;
+    margin-right: 8px;
+}
+.concept-item .desc { color: var(--coconut-brown); flex: 1; }
+
+.five-line {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 4px;
+    margin: 1em 0;
+    color: #5d4037;
+}
+
+.summary { margin: 1.5em 0; }
+
+.signature { text-align: center; color: var(--coconut-muted); margin: 2em 0 1em; }
+.signature .brand { color: var(--coconut-orange); font-weight: 700; }
+.signature .lesson-tag { font-size: 13px; margin-top: 4px; }
+
+.preview { text-align: center; color: var(--coconut-muted); font-size: 15px; margin: 0.8em 0; }
+
+.footer-links { text-align: center; color: var(--coconut-muted); font-size: 13px; padding: 8px 0; line-height: 1.8; }
+.footer-links a { color: var(--coconut-orange); text-decoration: none; }
+
+.emphasis-line { text-align: center; color: var(--coconut-deep); font-size: 17px; font-weight: 700; margin: 1em 0; }
+
+.mini-label { font-weight: 700; color: var(--coconut-deep); margin-top: 1.2em; }

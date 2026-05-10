@@ -1,0 +1,1162 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "rectangle",
+      "id": "e1",
+      "x": 495,
+      "y": 365,
+      "width": 170,
+      "height": 70,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#69db7c",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e2",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "type": "text",
+      "x": 500,
+      "y": 387.0,
+      "width": 160,
+      "height": 30,
+      "text": "乙木日主",
+      "fontSize": 26,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e1",
+      "originalText": "乙木日主",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e3",
+      "x": 495.0,
+      "y": 170.0,
+      "width": 170,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e4",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "type": "text",
+      "x": 500.0,
+      "y": 190.0,
+      "width": 160,
+      "height": 24,
+      "text": "克我（金）",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e3",
+      "originalText": "克我（金）",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e5",
+      "x": 503.0,
+      "y": 245.0,
+      "width": 72,
+      "height": 40,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffffff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e6",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e6",
+      "type": "text",
+      "x": 508.0,
+      "y": 257.0,
+      "width": 62,
+      "height": 20,
+      "text": "正官 庚",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e5",
+      "originalText": "正官 庚",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e7",
+      "x": 585.0,
+      "y": 245.0,
+      "width": 72,
+      "height": 40,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffffff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e8",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e8",
+      "type": "text",
+      "x": 590.0,
+      "y": 257.0,
+      "width": 62,
+      "height": 20,
+      "text": "七杀 辛",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e7",
+      "originalText": "七杀 辛",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e9",
+      "x": 685.2113032590307,
+      "y": 308.19660112501055,
+      "width": 170,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e10",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e10",
+      "type": "text",
+      "x": 690.2113032590307,
+      "y": 328.19660112501055,
+      "width": 160,
+      "height": 24,
+      "text": "生我（水）",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e9",
+      "originalText": "生我（水）",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e11",
+      "x": 693.2113032590307,
+      "y": 383.19660112501055,
+      "width": 72,
+      "height": 40,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffffff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e12",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e12",
+      "type": "text",
+      "x": 698.2113032590307,
+      "y": 395.19660112501055,
+      "width": 62,
+      "height": 20,
+      "text": "正印 壬",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e11",
+      "originalText": "正印 壬",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e13",
+      "x": 775.2113032590307,
+      "y": 383.19660112501055,
+      "width": 72,
+      "height": 40,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffffff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e14",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e14",
+      "type": "text",
+      "x": 780.2113032590307,
+      "y": 395.19660112501055,
+      "width": 62,
+      "height": 20,
+      "text": "偏印 癸",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e13",
+      "originalText": "偏印 癸",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e15",
+      "x": 612.5570504584946,
+      "y": 531.8033988749895,
+      "width": 170,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e16",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e16",
+      "type": "text",
+      "x": 617.5570504584946,
+      "y": 551.8033988749895,
+      "width": 160,
+      "height": 24,
+      "text": "我生（火）",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e15",
+      "originalText": "我生（火）",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e17",
+      "x": 620.5570504584946,
+      "y": 606.8033988749895,
+      "width": 72,
+      "height": 40,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffffff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e18",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e18",
+      "type": "text",
+      "x": 625.5570504584946,
+      "y": 618.8033988749895,
+      "width": 62,
+      "height": 20,
+      "text": "伤官 丙",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e17",
+      "originalText": "伤官 丙",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e19",
+      "x": 702.5570504584946,
+      "y": 606.8033988749895,
+      "width": 72,
+      "height": 40,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffffff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e20",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e20",
+      "type": "text",
+      "x": 707.5570504584946,
+      "y": 618.8033988749895,
+      "width": 62,
+      "height": 20,
+      "text": "食神 丁",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e19",
+      "originalText": "食神 丁",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e21",
+      "x": 377.4429495415054,
+      "y": 531.8033988749895,
+      "width": 170,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e22",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e22",
+      "type": "text",
+      "x": 382.4429495415054,
+      "y": 551.8033988749895,
+      "width": 160,
+      "height": 24,
+      "text": "我克（土）",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e21",
+      "originalText": "我克（土）",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e23",
+      "x": 385.4429495415054,
+      "y": 606.8033988749895,
+      "width": 72,
+      "height": 40,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffffff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e24",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e24",
+      "type": "text",
+      "x": 390.4429495415054,
+      "y": 618.8033988749895,
+      "width": 62,
+      "height": 20,
+      "text": "正财 戊",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e23",
+      "originalText": "正财 戊",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e25",
+      "x": 467.4429495415054,
+      "y": 606.8033988749895,
+      "width": 72,
+      "height": 40,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffffff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e26",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e26",
+      "type": "text",
+      "x": 472.4429495415054,
+      "y": 618.8033988749895,
+      "width": 62,
+      "height": 20,
+      "text": "偏财 己",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e25",
+      "originalText": "偏财 己",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e27",
+      "x": 304.78869674096927,
+      "y": 308.19660112501055,
+      "width": 170,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e28",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e28",
+      "type": "text",
+      "x": 309.78869674096927,
+      "y": 328.19660112501055,
+      "width": 160,
+      "height": 24,
+      "text": "同我（木）",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e27",
+      "originalText": "同我（木）",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e29",
+      "x": 312.78869674096927,
+      "y": 383.19660112501055,
+      "width": 72,
+      "height": 40,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffffff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e30",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e30",
+      "type": "text",
+      "x": 317.78869674096927,
+      "y": 395.19660112501055,
+      "width": 62,
+      "height": 20,
+      "text": "劫财 甲",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e29",
+      "originalText": "劫财 甲",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e31",
+      "x": 394.78869674096927,
+      "y": 383.19660112501055,
+      "width": 72,
+      "height": 40,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffffff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e32",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e32",
+      "type": "text",
+      "x": 399.78869674096927,
+      "y": 395.19660112501055,
+      "width": 62,
+      "height": 20,
+      "text": "比肩 乙",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e31",
+      "originalText": "比肩 乙",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "e33",
+      "x": 580.0,
+      "y": 240.0,
+      "width": 0.0,
+      "height": 118.0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.0,
+          118.0
+        ]
+      ],
+      "strokeStyle": "solid",
+      "strokeColor": "#495057",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "e34",
+      "type": "text",
+      "x": 537.0,
+      "y": 240.0,
+      "width": 50,
+      "height": 18,
+      "text": "金克木→",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#495057",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "金克木→",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "e35",
+      "x": 732.1690426072246,
+      "y": 350.55728090000844,
+      "width": -112.22466892282819,
+      "height": 36.46400533624376,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -112.22466892282819,
+          36.46400533624376
+        ]
+      ],
+      "strokeStyle": "solid",
+      "strokeColor": "#495057",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "e36",
+      "type": "text",
+      "x": 673.0750412196209,
+      "y": 312.7087734379441,
+      "width": 50,
+      "height": 18,
+      "text": "水生木→",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#495057",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "水生木→",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "e37",
+      "x": 604.6869805962839,
+      "y": 433.9787137637478,
+      "width": 69.35865977051174,
+      "height": 95.46400533624376,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          69.35865977051174,
+          95.46400533624376
+        ]
+      ],
+      "strokeStyle": "solid",
+      "strokeColor": "#495057",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "e38",
+      "type": "text",
+      "x": 587.4605142846488,
+      "y": 445.3014940912603,
+      "width": 50,
+      "height": 18,
+      "text": "→木生火",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#495057",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "→木生火",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "e39",
+      "x": 555.3130194037161,
+      "y": 433.9787137637478,
+      "width": -69.35865977051179,
+      "height": 95.46400533624376,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -69.35865977051179,
+          95.46400533624376
+        ]
+      ],
+      "strokeStyle": "solid",
+      "strokeColor": "#495057",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "e40",
+      "type": "text",
+      "x": 493.41487391785313,
+      "y": 424.1412250087313,
+      "width": 50,
+      "height": 18,
+      "text": "→木克土",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#495057",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "→木克土",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "e41",
+      "x": 540.0556263156036,
+      "y": 387.0212862362522,
+      "width": -112.22466892282819,
+      "height": -36.46400533624376,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -112.22466892282819,
+          -36.46400533624376
+        ]
+      ],
+      "strokeStyle": "dashed",
+      "strokeColor": "#868e96",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "endArrowhead": null
+    },
+    {
+      "id": "e42",
+      "type": "text",
+      "x": 478.9154786963877,
+      "y": 365.2786404500042,
+      "width": 50,
+      "height": 18,
+      "text": "比/劫",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#495057",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "比/劫",
+      "autoResize": true
+    },
+    {
+      "id": "e43",
+      "type": "text",
+      "x": 250,
+      "y": 15,
+      "width": 600,
+      "height": 30,
+      "text": "十神关系图 · 以乙木日主为例",
+      "fontSize": 26,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "十神关系图 · 以乙木日主为例",
+      "autoResize": true
+    },
+    {
+      "id": "e44",
+      "type": "text",
+      "x": 350,
+      "y": 50,
+      "width": 400,
+      "height": 22,
+      "text": "5种关系 × 阴阳各一 = 十神",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#868e96",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "5种关系 × 阴阳各一 = 十神",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e45",
+      "x": 180,
+      "y": 730,
+      "width": 24,
+      "height": 20,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e46",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e46",
+      "type": "text",
+      "x": 185,
+      "y": 734.0,
+      "width": 14,
+      "height": 16,
+      "text": "",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e45",
+      "originalText": "",
+      "autoResize": true
+    },
+    {
+      "id": "e47",
+      "type": "text",
+      "x": 210,
+      "y": 730,
+      "width": 100,
+      "height": 18,
+      "text": "金=克我 官杀",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#495057",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "金=克我 官杀",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e48",
+      "x": 360,
+      "y": 730,
+      "width": 24,
+      "height": 20,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e49",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e49",
+      "type": "text",
+      "x": 365,
+      "y": 734.0,
+      "width": 14,
+      "height": 16,
+      "text": "",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e48",
+      "originalText": "",
+      "autoResize": true
+    },
+    {
+      "id": "e50",
+      "type": "text",
+      "x": 390,
+      "y": 730,
+      "width": 100,
+      "height": 18,
+      "text": "水=生我 印",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#495057",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "水=生我 印",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e51",
+      "x": 540,
+      "y": 730,
+      "width": 24,
+      "height": 20,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e52",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e52",
+      "type": "text",
+      "x": 545,
+      "y": 734.0,
+      "width": 14,
+      "height": 16,
+      "text": "",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e51",
+      "originalText": "",
+      "autoResize": true
+    },
+    {
+      "id": "e53",
+      "type": "text",
+      "x": 570,
+      "y": 730,
+      "width": 100,
+      "height": 18,
+      "text": "火=我生 食伤",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#495057",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "火=我生 食伤",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e54",
+      "x": 720,
+      "y": 730,
+      "width": 24,
+      "height": 20,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e55",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e55",
+      "type": "text",
+      "x": 725,
+      "y": 734.0,
+      "width": 14,
+      "height": 16,
+      "text": "",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e54",
+      "originalText": "",
+      "autoResize": true
+    },
+    {
+      "id": "e56",
+      "type": "text",
+      "x": 750,
+      "y": 730,
+      "width": 100,
+      "height": 18,
+      "text": "土=我克 财",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#495057",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "土=我克 财",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "e57",
+      "x": 900,
+      "y": 730,
+      "width": 24,
+      "height": 20,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "strokeColor": "#1e1e1e",
+      "boundElements": [
+        {
+          "id": "e58",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "e58",
+      "type": "text",
+      "x": 905,
+      "y": 734.0,
+      "width": 14,
+      "height": 16,
+      "text": "",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "e57",
+      "originalText": "",
+      "autoResize": true
+    },
+    {
+      "id": "e59",
+      "type": "text",
+      "x": 930,
+      "y": 730,
+      "width": 100,
+      "height": 18,
+      "text": "木=同我 比劫",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#495057",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "木=同我 比劫",
+      "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

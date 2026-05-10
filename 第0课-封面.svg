@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF8F0"/>
+      <stop offset="50%" style="stop-color:#FEF3E2"/>
+      <stop offset="100%" style="stop-color:#FCE8D5"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDF6EC"/>
+      <stop offset="100%" style="stop-color:#F7ECD8"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="3" stdDeviation="6" flood-color="#C4A882" flood-opacity="0.2"/>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="4" flood-color="#C4A882" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Decorative mountain silhouette -->
+  <path d="M0 380 Q80 320 160 350 Q200 340 240 360 Q300 290 380 310 Q420 280 500 300 Q560 260 620 280 Q680 240 750 270 Q790 260 800 280 L800 450 L0 450 Z" fill="#E8D5B7" opacity="0.3"/>
+
+  <!-- Small decorative circles -->
+  <circle cx="90" cy="100" r="45" fill="#FFD54F" opacity="0.1"/>
+  <circle cx="710" cy="360" r="55" fill="#FFAB91" opacity="0.1"/>
+  <circle cx="650" cy="80" r="25" fill="#FFCC80" opacity="0.12"/>
+
+  <!-- Map/parchment base -->
+  <path d="M120 85 Q140 70 200 75 L600 75 Q660 70 680 85 L680 365 Q660 380 600 375 L200 375 Q140 380 120 365 Z" fill="url(#paper)" filter="url(#shadow)" stroke="#DCC4A0" stroke-width="1.5"/>
+
+  <!-- Torn edge effect top -->
+  <path d="M120 85 Q135 90 150 82 Q165 88 180 80 Q195 86 210 78 Q225 84 240 76 Q255 82 270 74 Q285 80 300 72 Q315 78 330 70 Q345 76 360 68 Q375 74 390 70 Q405 76 420 72 Q435 78 450 74 Q465 80 480 76 Q495 82 510 78 Q525 84 540 80 Q555 86 570 82 Q585 88 600 84 Q615 90 630 86 Q645 92 660 88 Q675 90 680 85" fill="none" stroke="#DCC4A0" stroke-width="1"/>
+
+  <!-- Torn edge effect bottom -->
+  <path d="M120 365 Q135 370 150 362 Q165 368 180 360 Q195 366 210 358 Q225 364 240 356 Q255 362 270 354 Q285 360 300 352 Q315 358 330 350 Q345 356 360 348 Q375 354 390 350 Q405 356 420 352 Q435 358 450 354 Q465 360 480 356 Q495 362 510 358 Q525 364 540 360 Q555 366 570 362 Q585 370 600 366 Q615 372 630 368 Q645 374 660 370 Q675 372 680 365" fill="none" stroke="#DCC4A0" stroke-width="1"/>
+
+  <!-- Decorative line top -->
+  <line x1="200" y1="100" x2="600" y2="100" stroke="#E6D3B8" stroke-width="0.5"/>
+
+  <!-- Title -->
+  <text x="400" y="145" text-anchor="middle" font-family="serif" font-size="26" fill="#8D6E63" letter-spacing="4">用生活讲八字 · 入门系列</text>
+
+  <!-- Main title - hand-drawn style -->
+  <text x="400" y="200" text-anchor="middle" font-family="serif" font-size="48" font-weight="bold" fill="#BF360C" letter-spacing="8">先看地图</text>
+  <text x="400" y="250" text-anchor="middle" font-family="serif" font-size="22" fill="#6D4C41" letter-spacing="3">八字到底在说什么</text>
+
+  <!-- Decorative line -->
+  <line x1="280" y1="270" x2="520" y2="270" stroke="#E65100" stroke-width="1.5" opacity="0.35"/>
+  <circle cx="400" cy="270" r="3" fill="#E65100" opacity="0.5"/>
+
+  <!-- Four pillars as elegant horizontal markers instead of boxes -->
+  <!-- Label -->
+  <text x="400" y="305" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8D6E63" letter-spacing="6">— 四柱·八字构成 —</text>
+
+  <!-- Four subtle pillar markers -->
+  <!-- Year Pillar -->
+  <g filter="url(#softShadow)">
+    <rect x="155" y="320" width="100" height="36" rx="18" fill="#FFF" stroke="#E65100" stroke-width="1" opacity="0.9"/>
+    <text x="175" y="335" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#E65100" font-weight="bold">年</text>
+    <text x="210" y="344" text-anchor="middle" font-family="serif" font-size="18" fill="#3E2723" font-weight="bold">甲寅</text>
+    <text x="248" y="335" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#BCAAA4">大环境</text>
+  </g>
+
+  <!-- Month Pillar -->
+  <g filter="url(#softShadow)">
+    <rect x="265" y="320" width="100" height="36" rx="18" fill="#FFF" stroke="#E65100" stroke-width="1" opacity="0.9"/>
+    <text x="285" y="335" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#E65100" font-weight="bold">月</text>
+    <text x="320" y="344" text-anchor="middle" font-family="serif" font-size="18" fill="#3E2723" font-weight="bold">丙午</text>
+    <text x="358" y="335" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#BCAAA4">成长</text>
+  </g>
+
+  <!-- Day Pillar - highlighted -->
+  <g filter="url(#shadow)">
+    <rect x="375" y="315" width="110" height="42" rx="21" fill="#FFF" stroke="#BF360C" stroke-width="2"/>
+    <text x="400" y="331" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#BF360C" font-weight="bold">日 ★ 你</text>
+    <text x="440" y="346" text-anchor="middle" font-family="serif" font-size="22" fill="#BF360C" font-weight="bold">乙丑</text>
+  </g>
+
+  <!-- Hour Pillar -->
+  <g filter="url(#softShadow)">
+    <rect x="495" y="320" width="100" height="36" rx="18" fill="#FFF" stroke="#E65100" stroke-width="1" opacity="0.9"/>
+    <text x="515" y="335" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#E65100" font-weight="bold">时</text>
+    <text x="550" y="344" text-anchor="middle" font-family="serif" font-size="18" fill="#3E2723" font-weight="bold">乙亥</text>
+    <text x="588" y="335" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#BCAAA4">晚年</text>
+  </g>
+
+  <!-- Small decorative elements -->
+  <!-- Top-left corner ornament -->
+  <path d="M135 95 Q150 95 150 110" fill="none" stroke="#DCC4A0" stroke-width="1" opacity="0.6"/>
+  <path d="M135 95 Q135 110 150 110" fill="none" stroke="#DCC4A0" stroke-width="1" opacity="0.6"/>
+
+  <!-- Bottom-right corner ornament -->
+  <path d="M650 355 Q650 340 665 340" fill="none" stroke="#DCC4A0" stroke-width="1" opacity="0.6"/>
+  <path d="M650 355 Q665 355 665 340" fill="none" stroke="#DCC4A0" stroke-width="1" opacity="0.6"/>
+
+  <!-- Footer -->
+  <text x="400" y="410" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#E65100" font-weight="bold">🥥 椰子要破壳</text>
+  <text x="400" y="432" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#BCAAA4">原创文章 · 转载请联系作者</text>
+</svg>
