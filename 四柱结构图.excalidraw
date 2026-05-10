@@ -1,0 +1,85 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 220,
+      "y": 40,
+      "width": 360,
+      "height": 35,
+      "text": "四柱结构 — 天干在上，地支在下",
+      "fontSize": 28,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "四柱结构 — 天干在上，地支在下",
+      "autoResize": true
+    },
+
+    { "type": "text", "id": "lbl_tg", "x": 40, "y": 150, "width": 70, "height": 25, "text": "天干", "fontSize": 20, "fontFamily": 1, "strokeColor": "#bf360c", "originalText": "天干", "autoResize": true },
+    { "type": "text", "id": "lbl_tg_desc", "x": 20, "y": 180, "width": 90, "height": 20, "text": "像天气，外面看到的", "fontSize": 14, "fontFamily": 1, "strokeColor": "#8d6e63", "originalText": "像天气，外面看到的", "autoResize": true },
+    { "type": "text", "id": "lbl_dz", "x": 40, "y": 240, "width": 70, "height": 25, "text": "地支", "fontSize": 20, "fontFamily": 1, "strokeColor": "#bf360c", "originalText": "地支", "autoResize": true },
+    { "type": "text", "id": "lbl_dz_desc", "x": 20, "y": 270, "width": 90, "height": 20, "text": "像地基，骨子里的底色", "fontSize": 14, "fontFamily": 1, "strokeColor": "#8d6e63", "originalText": "像地基，骨子里的底色", "autoResize": true },
+
+    { "type": "text", "id": "h_col0", "x": 155, "y": 95, "width": 50, "height": 25, "text": "年柱", "fontSize": 20, "fontFamily": 1, "strokeColor": "#e65100", "textAlign": "center", "originalText": "年柱", "autoResize": true },
+    { "type": "text", "id": "h_col1", "x": 305, "y": 95, "width": 50, "height": 25, "text": "月柱", "fontSize": 20, "fontFamily": 1, "strokeColor": "#e65100", "textAlign": "center", "originalText": "月柱", "autoResize": true },
+    { "type": "text", "id": "h_col2", "x": 455, "y": 95, "width": 50, "height": 25, "text": "日柱", "fontSize": 20, "fontFamily": 1, "strokeColor": "#e65100", "textAlign": "center", "originalText": "日柱", "autoResize": true },
+    { "type": "text", "id": "h_col3", "x": 605, "y": 95, "width": 50, "height": 25, "text": "时柱", "fontSize": 20, "fontFamily": 1, "strokeColor": "#e65100", "textAlign": "center", "originalText": "时柱", "autoResize": true },
+
+    { "type": "rectangle", "id": "r_c0_tg", "x": 130, "y": 130, "width": 100, "height": 70, "fillStyle": "solid", "backgroundColor": "#fff3e0", "strokeColor": "#e65100", "strokeWidth": 2, "roundness": { "type": 3 }, "boundElements": [{ "id": "t_c0_tg", "type": "text" }] },
+    { "type": "text", "id": "t_c0_tg", "x": 155, "y": 150, "width": 50, "height": 30, "text": "丙", "fontSize": 28, "fontFamily": 1, "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "r_c0_tg", "originalText": "丙", "autoResize": true },
+
+    { "type": "rectangle", "id": "r_c0_dz", "x": 130, "y": 200, "width": 100, "height": 70, "fillStyle": "solid", "backgroundColor": "#fbe9e7", "strokeColor": "#e65100", "strokeWidth": 2, "roundness": { "type": 3 }, "boundElements": [{ "id": "t_c0_dz", "type": "text" }] },
+    { "type": "text", "id": "t_c0_dz", "x": 155, "y": 220, "width": 50, "height": 30, "text": "午", "fontSize": 28, "fontFamily": 1, "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "r_c0_dz", "originalText": "午", "autoResize": true },
+
+    { "type": "text", "id": "b0", "x": 142, "y": 290, "width": 80, "height": 20, "text": "↑ 年份", "fontSize": 16, "fontFamily": 1, "strokeColor": "#8d6e63", "originalText": "↑ 年份", "autoResize": true },
+
+    { "type": "rectangle", "id": "r_c1_tg", "x": 280, "y": 130, "width": 100, "height": 70, "fillStyle": "solid", "backgroundColor": "#fff3e0", "strokeColor": "#e65100", "strokeWidth": 2, "roundness": { "type": 3 }, "boundElements": [{ "id": "t_c1_tg", "type": "text" }] },
+    { "type": "text", "id": "t_c1_tg", "x": 305, "y": 150, "width": 50, "height": 30, "text": "庚", "fontSize": 28, "fontFamily": 1, "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "r_c1_tg", "originalText": "庚", "autoResize": true },
+
+    { "type": "rectangle", "id": "r_c1_dz", "x": 280, "y": 200, "width": 100, "height": 70, "fillStyle": "solid", "backgroundColor": "#fbe9e7", "strokeColor": "#e65100", "strokeWidth": 2, "roundness": { "type": 3 }, "boundElements": [{ "id": "t_c1_dz", "type": "text" }] },
+    { "type": "text", "id": "t_c1_dz", "x": 305, "y": 220, "width": 50, "height": 30, "text": "子", "fontSize": 28, "fontFamily": 1, "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "r_c1_dz", "originalText": "子", "autoResize": true },
+
+    { "type": "text", "id": "b1", "x": 292, "y": 290, "width": 80, "height": 20, "text": "↑ 月份", "fontSize": 16, "fontFamily": 1, "strokeColor": "#8d6e63", "originalText": "↑ 月份", "autoResize": true },
+
+    { "type": "rectangle", "id": "r_c2_tg", "x": 430, "y": 130, "width": 100, "height": 70, "fillStyle": "solid", "backgroundColor": "#fff3e0", "strokeColor": "#e65100", "strokeWidth": 2, "roundness": { "type": 3 }, "boundElements": [{ "id": "t_c2_tg", "type": "text" }] },
+    { "type": "text", "id": "t_c2_tg", "x": 455, "y": 150, "width": 50, "height": 30, "text": "甲", "fontSize": 28, "fontFamily": 1, "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "r_c2_tg", "originalText": "甲", "autoResize": true },
+
+    { "type": "rectangle", "id": "r_c2_dz", "x": 430, "y": 200, "width": 100, "height": 70, "fillStyle": "solid", "backgroundColor": "#fbe9e7", "strokeColor": "#e65100", "strokeWidth": 2, "roundness": { "type": 3 }, "boundElements": [{ "id": "t_c2_dz", "type": "text" }] },
+    { "type": "text", "id": "t_c2_dz", "x": 455, "y": 220, "width": 50, "height": 30, "text": "寅", "fontSize": 28, "fontFamily": 1, "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "r_c2_dz", "originalText": "寅", "autoResize": true },
+
+    { "type": "text", "id": "b2_you", "x": 440, "y": 315, "width": 85, "height": 20, "text": "↑ 你自己（核心）", "fontSize": 16, "fontFamily": 1, "strokeColor": "#e65100", "originalText": "↑ 你自己（核心）", "autoResize": true },
+    { "type": "rectangle", "id": "r_highlight", "x": 425, "y": 125, "width": 110, "height": 150, "fillStyle": "solid", "backgroundColor": "transparent", "strokeColor": "#e65100", "strokeWidth": 3, "strokeStyle": "dashed", "roundness": { "type": 3 } },
+
+    { "type": "rectangle", "id": "r_c3_tg", "x": 580, "y": 130, "width": 100, "height": 70, "fillStyle": "solid", "backgroundColor": "#fff3e0", "strokeColor": "#e65100", "strokeWidth": 2, "roundness": { "type": 3 }, "boundElements": [{ "id": "t_c3_tg", "type": "text" }] },
+    { "type": "text", "id": "t_c3_tg", "x": 605, "y": 150, "width": 50, "height": 30, "text": "戊", "fontSize": 28, "fontFamily": 1, "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "r_c3_tg", "originalText": "戊", "autoResize": true },
+
+    { "type": "rectangle", "id": "r_c3_dz", "x": 580, "y": 200, "width": 100, "height": 70, "fillStyle": "solid", "backgroundColor": "#fbe9e7", "strokeColor": "#e65100", "strokeWidth": 2, "roundness": { "type": 3 }, "boundElements": [{ "id": "t_c3_dz", "type": "text" }] },
+    { "type": "text", "id": "t_c3_dz", "x": 605, "y": 220, "width": 50, "height": 30, "text": "辰", "fontSize": 28, "fontFamily": 1, "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "r_c3_dz", "originalText": "辰", "autoResize": true },
+
+    { "type": "text", "id": "b3", "x": 592, "y": 290, "width": 80, "height": 20, "text": "↑ 时辰", "fontSize": 16, "fontFamily": 1, "strokeColor": "#8d6e63", "originalText": "↑ 时辰", "autoResize": true },
+
+    { "type": "text", "id": "note_arrow", "x": 130, "y": 360, "width": 540, "height": 20, "text": "每个柱分上下两个字：上面叫天干（外面看到的），下面叫地支（骨子里的底色）", "fontSize": 16, "fontFamily": 1, "strokeColor": "#5d4037", "originalText": "每个柱分上下两个字：上面叫天干（外面看到的），下面叫地支（骨子里的底色）", "autoResize": true },
+
+    {
+      "type": "arrow",
+      "id": "ar_rigan",
+      "x": 570,
+      "y": 155,
+      "width": 0,
+      "height": 0,
+      "points": [[0,0],[-40,0]],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e65100",
+      "strokeWidth": 3
+    },
+    { "type": "text", "id": "lbl_rigan", "x": 580, "y": 135, "width": 140, "height": 40, "text": "日干\n（日柱上面的天干=你）", "fontSize": 18, "fontFamily": 1, "strokeColor": "#e65100", "originalText": "日干\n（日柱上面的天干=你）", "autoResize": true, "bold": true }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}
