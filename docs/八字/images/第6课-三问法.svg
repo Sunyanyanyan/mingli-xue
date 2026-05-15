@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="480" viewBox="0 0 420 480">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&amp;display=swap');
+      text { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+      .title { fill:#8B6F47; font-size:18px; font-weight:700; }
+      .step { fill:#FFF8F0; stroke:#C4956A; stroke-width:2.5; rx:8; ry:8; }
+      .step-text { fill:#5C4033; font-size:14px; font-weight:700; text-anchor:middle; }
+      .arrow { stroke:#C4956A; stroke-width:2; fill:none; marker-end:url(#arrowhead); }
+      .note { fill:#A08060; font-size:12px; text-anchor:middle; }
+      .highlight { fill:#E8D5B7; stroke:#C4956A; stroke-width:2; rx:8; ry:8; }
+      .hl-text { fill:#8B6F47; font-size:13px; font-weight:700; text-anchor:middle; }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#C4956A"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="210" y="35" class="title" text-anchor="middle">三问法 · 十神速推</text>
+
+  <!-- Step 1 Box -->
+  <rect x="95" y="60" width="230" height="50" class="step"/>
+  <text x="210" y="82" class="step-text">第一问：跟你什么五行关系？</text>
+  <text x="210" y="98" class="note">生我？克我？我生？我克？同我？</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="210" y1="110" x2="210" y2="150" class="arrow"/>
+
+  <!-- Step 2 Box -->
+  <rect x="95" y="155" width="230" height="50" class="step"/>
+  <text x="210" y="177" class="step-text">第二问：阴阳一样吗？</text>
+  <text x="210" y="193" class="note">决定正（相反）还是偏（相同）</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="210" y1="205" x2="210" y2="245" class="arrow"/>
+
+  <!-- Step 3 Box -->
+  <rect x="95" y="250" width="230" height="50" class="step"/>
+  <text x="210" y="272" class="step-text">第三问：得出名字</text>
+  <text x="210" y="288" class="note">正官 / 七杀 / 正印 / 偏印 …</text>
+
+  <!-- Arrow to formula -->
+  <line x1="210" y1="300" x2="210" y2="340" class="arrow"/>
+
+  <!-- Formula box -->
+  <rect x="60" y="345" width="300" height="55" class="highlight"/>
+  <text x="210" y="368" class="hl-text">十神 = 五行生克 + 阴阳</text>
+  <text x="210" y="386" class="note" fill="#8B6F47">不是新东西，只是起了个人名</text>
+
+  <!-- Bottom note -->
+  <text x="210" y="430" class="note" fill="#B09070">拿任何一个天干，三问一答，十神就出来了</text>
+
+  <!-- Side label -->
+  <line x1="330" y1="85" x2="370" y2="85" stroke="#D0C0A0" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="378" y="89" font-size="11" fill="#B09070" font-family="'Noto Sans SC', sans-serif">关系</text>
+  <line x1="330" y1="180" x2="370" y2="180" stroke="#D0C0A0" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="378" y="184" font-size="11" fill="#B09070" font-family="'Noto Sans SC', sans-serif">分阴阳</text>
+</svg>
