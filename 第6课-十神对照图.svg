@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#5d4037"/>
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="560" fill="#faf8f5" rx="8"/>
+
+  <!-- Title -->
+  <text x="360" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#e65100" font-family="sans-serif">十神 = 五行生克 + 阴阳</text>
+
+  <!-- Column headers -->
+  <text x="95" y="72" text-anchor="middle" font-size="14" fill="#8d6e63" font-family="sans-serif">五行关系</text>
+  <text x="345" y="72" text-anchor="middle" font-size="14" fill="#8d6e63" font-family="sans-serif">阴阳</text>
+  <text x="585" y="72" text-anchor="middle" font-size="14" fill="#8d6e63" font-family="sans-serif">十神</text>
+
+  <rect x="20" y="77" width="140" height="36" rx="6" fill="#ffd8a8" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="90" y="100" text-anchor="middle" font-size="16" fill="#3e2723" font-family="sans-serif">克你的</text>
+  <rect x="510" y="55" width="140" height="36" rx="6" fill="#d0bfff" stroke="#7c5cbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="78" text-anchor="middle" font-size="17" fill="#3e2723" font-family="sans-serif">正官</text>
+  <rect x="510" y="99" width="140" height="36" rx="6" fill="#d0bfff" stroke="#7c5cbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="122" text-anchor="middle" font-size="17" fill="#3e2723" font-family="sans-serif">七杀</text>
+  <line x1="160" y1="95" x2="340" y2="95" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="95" x2="340" y2="73" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="73" x2="510" y2="73" stroke="#5d4037" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="340" y1="95" x2="340" y2="117" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="117" x2="510" y2="117" stroke="#5d4037" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="420" y="65" text-anchor="middle" font-size="13" fill="#bf360c" font-family="sans-serif">相反</text>
+  <text x="420" y="135" text-anchor="middle" font-size="13" fill="#bf360c" font-family="sans-serif">相同</text>
+  <rect x="20" y="155" width="140" height="36" rx="6" fill="#ffd8a8" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="90" y="178" text-anchor="middle" font-size="16" fill="#3e2723" font-family="sans-serif">生你的</text>
+  <rect x="510" y="133" width="140" height="36" rx="6" fill="#d0bfff" stroke="#7c5cbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="156" text-anchor="middle" font-size="17" fill="#3e2723" font-family="sans-serif">正印</text>
+  <rect x="510" y="177" width="140" height="36" rx="6" fill="#d0bfff" stroke="#7c5cbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="200" text-anchor="middle" font-size="17" fill="#3e2723" font-family="sans-serif">偏印</text>
+  <line x1="160" y1="173" x2="340" y2="173" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="173" x2="340" y2="151" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="151" x2="510" y2="151" stroke="#5d4037" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="340" y1="173" x2="340" y2="195" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="195" x2="510" y2="195" stroke="#5d4037" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="420" y="143" text-anchor="middle" font-size="13" fill="#bf360c" font-family="sans-serif">相反</text>
+  <text x="420" y="213" text-anchor="middle" font-size="13" fill="#bf360c" font-family="sans-serif">相同</text>
+  <rect x="20" y="233" width="140" height="36" rx="6" fill="#ffd8a8" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="90" y="256" text-anchor="middle" font-size="16" fill="#3e2723" font-family="sans-serif">你生的</text>
+  <rect x="510" y="211" width="140" height="36" rx="6" fill="#d0bfff" stroke="#7c5cbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="234" text-anchor="middle" font-size="17" fill="#3e2723" font-family="sans-serif">伤官</text>
+  <rect x="510" y="255" width="140" height="36" rx="6" fill="#d0bfff" stroke="#7c5cbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="278" text-anchor="middle" font-size="17" fill="#3e2723" font-family="sans-serif">食神</text>
+  <line x1="160" y1="251" x2="340" y2="251" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="251" x2="340" y2="229" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="229" x2="510" y2="229" stroke="#5d4037" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="340" y1="251" x2="340" y2="273" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="273" x2="510" y2="273" stroke="#5d4037" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="420" y="221" text-anchor="middle" font-size="13" fill="#bf360c" font-family="sans-serif">相反</text>
+  <text x="420" y="291" text-anchor="middle" font-size="13" fill="#bf360c" font-family="sans-serif">相同</text>
+  <rect x="20" y="311" width="140" height="36" rx="6" fill="#ffd8a8" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="90" y="334" text-anchor="middle" font-size="16" fill="#3e2723" font-family="sans-serif">你克的</text>
+  <rect x="510" y="289" width="140" height="36" rx="6" fill="#d0bfff" stroke="#7c5cbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="312" text-anchor="middle" font-size="17" fill="#3e2723" font-family="sans-serif">正财</text>
+  <rect x="510" y="333" width="140" height="36" rx="6" fill="#d0bfff" stroke="#7c5cbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="356" text-anchor="middle" font-size="17" fill="#3e2723" font-family="sans-serif">偏财</text>
+  <line x1="160" y1="329" x2="340" y2="329" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="329" x2="340" y2="307" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="307" x2="510" y2="307" stroke="#5d4037" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="340" y1="329" x2="340" y2="351" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="351" x2="510" y2="351" stroke="#5d4037" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="420" y="299" text-anchor="middle" font-size="13" fill="#bf360c" font-family="sans-serif">相反</text>
+  <text x="420" y="369" text-anchor="middle" font-size="13" fill="#bf360c" font-family="sans-serif">相同</text>
+  <rect x="20" y="389" width="140" height="36" rx="6" fill="#ffd8a8" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="90" y="412" text-anchor="middle" font-size="16" fill="#3e2723" font-family="sans-serif">同你的</text>
+  <rect x="510" y="367" width="140" height="36" rx="6" fill="#d0bfff" stroke="#7c5cbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="390" text-anchor="middle" font-size="17" fill="#3e2723" font-family="sans-serif">劫财</text>
+  <rect x="510" y="411" width="140" height="36" rx="6" fill="#d0bfff" stroke="#7c5cbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="434" text-anchor="middle" font-size="17" fill="#3e2723" font-family="sans-serif">比肩</text>
+  <line x1="160" y1="407" x2="340" y2="407" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="407" x2="340" y2="385" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="385" x2="510" y2="385" stroke="#5d4037" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="340" y1="407" x2="340" y2="429" stroke="#5d4037" stroke-width="1.5"/>
+  <line x1="340" y1="429" x2="510" y2="429" stroke="#5d4037" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="420" y="377" text-anchor="middle" font-size="13" fill="#bf360c" font-family="sans-serif">相反</text>
+  <text x="420" y="447" text-anchor="middle" font-size="13" fill="#bf360c" font-family="sans-serif">相同</text>
+  <text x="360" y="535" text-anchor="middle" font-size="13" fill="#8d6e63" font-family="sans-serif">五个关系 × 阴阳之分 = 十个神</text>
+</svg>
